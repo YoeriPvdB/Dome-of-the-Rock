@@ -19,7 +19,7 @@
 
 <body>
 
-
+  
   <nav class="navbar navbar-expand-lg navbar-light opacity">
 
     <ul class="navbar-nav">
@@ -50,17 +50,19 @@
     
   </nav>
 
+  
   <div class="side-buttons">
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-history">
+    
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-history">
       <a href="#">HISTORY</a>
     </button>
   
   
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-architecture">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-architecture">
       <a href="#">ARCHITECTURE</a>
     </button>
   
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-significance">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-significance">
       <a href="#">SIGNIFICANCE</a>
     </button>
   </div>
@@ -70,7 +72,34 @@
     <h1>Dome of the Rock</h1>
   </div>
 
+  <div class="burger-menu">
+    <!-- <a href="#home" class="active">Logo</a> -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="assets/images/menu.png" alt="">
+    </a>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    
+  </div>
+
+  
+
 
 </body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+  
 
 </html>
