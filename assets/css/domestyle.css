@@ -117,6 +117,23 @@ body {
     display: none;
 }
 
+
+
+.carousel-slide {
+    width: 30vw;
+    height: 10vh;
+    
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+
 @media (max-width: 1000px) {
     body {
         background-image: url("../images/dome_bg.jpg");
@@ -137,7 +154,8 @@ body {
     .burger-menu {
         display: block;
         
-        position: fixed;
+        position: absolute;
+        
         width: 100%;
         
     }
@@ -147,7 +165,7 @@ body {
         background-color: black;
         color: white;
         display: none;
-        margin-top: 50px;
+        /* margin-top: 10px; */
         
       }
 
@@ -169,10 +187,9 @@ body {
        
         
         display: block;
-        position: fixed;
+        position: relative;
         margin-top: 10px;
-        margin-left: 75%;
-        
+        left: 75vw;
         top: 0;
         max-width: 50px;
         max-height: 60px;
