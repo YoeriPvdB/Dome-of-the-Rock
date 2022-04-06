@@ -8,7 +8,7 @@
 body {
     font-family: "Roboto Black", sans-serif;
 
-    background: url("../images/homepage.png") no-repeat center center fixed;
+    background: url("../images/homepage04.jpg") no-repeat center center fixed;
     /*background-size: 1920px 1100px;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,7 +20,7 @@ body {
 
 
 .navbar-light .navbar-nav .nav-link {
-    font: italic;
+    /*font: italic;*/
     color: white;
 }
 
@@ -115,10 +115,113 @@ body {
     padding-top: 10px;
     text-decoration: none;
 }
+.btn-block{
 
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    /*transition: all 1s ease;*/
+    /*border:none;*/
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1),0s;
+}
 .btn-block:hover a {
     color: black;
     
+}
+
+.btn-primary{
+    border: 2px solid #F7CA18;
+}
+.btn-primary:hover{
+    border: 2px solid #F7CA18;
+}
+/*animated Button attempt*/
+a.btn-block:link, a.btn-block:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.btn-block:link:after, a.btn-block:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.btn-block:link:hover, a.btn-block:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.btn-block:link:hover:after, a.btn-block:visited:hover:after {
+    height: 450%;
+}
+a.btn-block:link, a.btn-block:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.btn-block:hover {
+    color: #000 !important;
+    background-color: transparent;
+    /*text-shadow: nthree;*/
+}
+a.btn-block:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+a.btn-block:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1),0s;
 }
 
 .burger-menu {
@@ -215,4 +318,4 @@ body {
 
     
   }
-  
+
