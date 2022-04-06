@@ -6,7 +6,7 @@
   }
 
 body {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     font-family: "Roboto Black", sans-serif;
 }
 
@@ -14,15 +14,15 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     font: italic;
-    color: white;
+    color: black;
 }
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: black;
+    color: white
 }
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -42,6 +42,7 @@ body {
     color: black;
 }
 .intro-text > h1::before {
+    z-index: 10;
     content: "";
     position: absolute;
     width: 100%;
@@ -55,7 +56,7 @@ body {
 
 .btn-block {
     position: relative;
-    right: 0;
+    left: 82%;
     border-radius: 2px;
     
     background-color:black;
@@ -135,6 +136,95 @@ body {
 }
 
 .container {
+    width: 90vw;
+    height: auto;
+    top: 110vh;
+    position: relative;
+    
+    display: block;
+    
+    margin: auto;
+    
+    padding: 3%;
+    z-index: -1;
+}
+
+.container > h1 {
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.content-paragraph  {
+    
+}
+
+.content-fullparagraph {
+    margin-bottom: 5%;
+}
+
+
+
+.halfwidth {
+    
+    width: 50%;
+    /* margin-left: 10%; */
+}
+
+.halfwidth > p {
+    margin-top:5%;
+    
+}
+
+.content-half-half {
+   padding-top: 1%;
+    display: flex;
+   height: 50%;
+   overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.content-image {
+    border-style: solid;
+    padding: 1%;
+    width: 50%;
+    height: 40vh;
+}
+
+.content-image > img{
+    object-fit: cover;
+        display: inline;
+        /* margin: 0 auto; */
+            width: 100%;
+            height: 100%;
+}
+
+#right-image {
+    /* padding-right: 0; */
+    margin-left: 5%;
+}
+
+#left-image {
+    /* padding-left: 0; */
+    margin-right: 5%;
+}
+
+.full-image {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+.full-image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.scroll-container {
     position: fixed;
     margin: auto;
     left: 50%;
@@ -152,8 +242,8 @@ body {
   }
   
   section {
-    min-width: 30%;
-    min-height: 100%;
+    width: 15%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,12 +253,14 @@ body {
   section:nth-child(even) {
     background-color: teal;
     color: white;
+    position: relative;
+    top: 30%;
   }
 
 
 @media (max-width: 1000px) {
     body {
-        background-image: url("../images/dome_bg.jpg");
+        
         background-size: 500%;
         /* margin: auto; */
         background-position: 50% 110%;
@@ -186,8 +278,8 @@ body {
     .burger-menu {
         display: block;
         
-        position: absolute;
-        
+        position: fixed;
+        background-color: aliceblue;
         width: 100%;
         
     }
@@ -233,8 +325,62 @@ body {
         color: black;
       }
 
+
       
+
       
+      .content-image {
+          position: relative;
+          width: 100%;
+          margin: auto;
+          margin-top: 5%;
+         height: 30%;
+          /* object-fit: cover;
+          object-position: 50%; */
+          border-style: solid;
+
+         
+      }
+
+      .content-image > img {
+        object-fit: cover;
+        display: inline;
+        margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+      }
+
+      img {
+            object-fit: cover;
+      }
+
+      .halfwidth {
+            width: 100%;
+      }
+
+      .content-half-half {
+          padding: 1%;
+          display: block;
+          width: 100%;
+          padding: auto;
+      }
+      
+      p {
+          font-size: medium;
+          
+      }
+
+      #right-image {
+          /* padding: inherit; */
+          margin-left: inherit;
+      }
+
+      #left-image {
+          /* padding: inherit; */
+      }
+    
+
       
 
     
