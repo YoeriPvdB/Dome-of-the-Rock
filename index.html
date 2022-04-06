@@ -50,17 +50,19 @@
     
   </nav>
 
+  
   <div class="side-buttons">
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-history">
-      <a href="#">HISTORY</a>
+    
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-history">
+      <a href="assets/pages/history.html">HISTORY</a>
     </button>
   
   
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-architecture">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-architecture">
       <a href="#">ARCHITECTURE</a>
     </button>
   
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-significance">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-significance">
       <a href="#">SIGNIFICANCE</a>
     </button>
   </div>
@@ -70,7 +72,33 @@
     <h1>Dome of the Rock</h1>
   </div>
 
-
+  <div class="burger-menu">
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="assets/images/menu.png" alt="">
+    </a>
+    <div id="myLinks">
+      <a href="#home">HOME</a>
+      <a href="assets/pages/history.html">HISTORY</a>
+      <a href="#about">ARCHITECTURE</a>
+      <a href="#">SIGNIFICANCE</a>
+      <a href="#">EN/AR</a>
+      <a href="#">ACCESSIBILITY</a>
+    </div>
+    
+  </div>
 </body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+  
 
 </html>
