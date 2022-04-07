@@ -41,6 +41,7 @@ body {
   background-color: black;
   /* border-style: solid; */
   height: 90vh;
+  z-index: 1;
 }
 
 .drop-segment {
@@ -97,6 +98,8 @@ body {
   margin-left: 25%;
 }
 
+
+
 .drop-content > h3 {
   /* padding: 1%; */
   padding-top: 1%;
@@ -108,6 +111,19 @@ body {
   margin-top: 1%;
 }
 
+.drop-toggle {
+  display: flex;
+  margin: 10%;
+}
+
+.drop-toggle > button {
+  margin-left: 1%;
+  height: 10%;
+}
+
+.drop-toggle-buttons {
+  margin-left: 10%;
+}
 
 .intro-text  {
     display: inline-block;

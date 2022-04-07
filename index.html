@@ -39,20 +39,20 @@
         <a class="nav-link" href="#">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">HISTORY</a>
+        <a class="nav-link" href="#" onclick="DropChange(1)">HISTORY</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ARCHITECTURE</a>
+        <a class="nav-link" href="#" onclick="DropChange(2)">ARCHITECTURE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">RELIGION</a>
+        <a class="nav-link" href="#" onclick="DropChange(3)">RELIGION</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">EN/AR</a>
+        <a class="nav-link " href="#" onclick="DropChange(4)">EN/AR</a>
       </li>
       <li class="nav-item">
 
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" onclick="DropChange(5)">
           ACCESSIBILITY
         </a>
       </li>
@@ -63,19 +63,110 @@
   </nav>
 
 
-  <div class="drop-container" id="dropId">
+  <div class="drop-container" id="history-drop">
 
-    <div id="close" onclick="DropChange(0)"> <img src="/assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropChange(0)"> <img src="../images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
-        <h1>TEST TITLE</h1>
+        <h1>HISTORY</h1>
         <div class="hl"></div>
       </div>
 
       <div class="drop-content">
           <h3>CONTENT 1</h3>
           <h3>CONTENT 2</h3>
+          <h3>CONTENT 3</h3>
+          <h3>CONTENT 4</h3>
+          <div class="hl"></div>
+      </div>
+    </div>
+      
+  </div>
+
+  <div class="drop-container" id="arch-drop">
+
+    <div id="close" onclick="DropChange(0)"> <img src="../images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+      <div class="drop-title">
+        <h1>ARCHITECTURE</h1>
+        <div class="hl"></div>
+      </div>
+
+      <div class="drop-content">
+          <h3>CONTENT 1</h3>
+          <h3>CONTENT 2</h3>
+          <div class="hl"></div>
+      </div>
+    </div>
+      
+  </div>
+
+  <div class="drop-container" id="signi-drop">
+
+    <div id="close" onclick="DropChange(0)"> <img src="../images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+      <div class="drop-title">
+        <h1>SIGNIFICANCE</h1>
+        <div class="hl"></div>
+      </div>
+
+      <div class="drop-content">
+          <h3>ISLAM</h3>
+          <h3>JUDAISM</h3>
+          <h3>CHRISTIANITY</h3>
+          <div class="hl"></div>
+      </div>
+    </div>
+      
+  </div>
+
+  <div class="drop-container" id="lang-drop">
+
+    <div id="close" onclick="DropChange(0)"> <img src="../images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+      <div class="drop-title">
+        <h1>LANGUAGE</h1>
+        <div class="hl"></div>
+      </div>
+
+      <div class="drop-content">
+          <h3>ENGLISH</h3>
+          <h3>LANGUAGE 2</h3>
+          <div class="hl"></div>
+      </div>
+    </div>
+      
+  </div>
+
+  <div class="drop-container" id="access-drop">
+
+    <div id="close" onclick="DropChange(0)"> <img src="../images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+      <div class="drop-title">
+        <h1>ACCESSIBILITY</h1>
+        <div class="hl"></div>
+      </div>
+
+      <div class="drop-content">
+
+        <div class="drop-toggle" id="toggle-text">
+          <h3>TEXT-SIZE</h3>
+          <div class="drop-toggle-buttons"></div>
+          <button><h3>A</h3></button>
+          <button><h2>A</h2></button>
+          <button><h1>A</h1></button>
+        </div>
+
+        <div class="drop-toggle">
+          <h3>GREYSCALE</h3>
+          <button onclick="FilterChange()">ON/OFF</button>
+        </div>
+         
           <div class="hl"></div>
       </div>
     </div>
@@ -126,13 +217,22 @@
 
 <script>
 
-  var drop = document.getElementById("dropId");
+  var drops = [document.getElementById("history-drop"), document.getElementById("arch-drop"), document.getElementById("signi-drop"), document.getElementById("lang-drop"), document.getElementById("access-drop") ];
+
+  var filterStatus = 0;
 
   function DropChange(status) {
-    if(status == 1) {
-      drop.style.display = "block";
+    if(status == 0) {
+      for(let i = 0; i < drops.length; i++) {
+        drops[i].style.display = "none";
+      }
+     
     } else {
-      drop.style.display = "none";
+
+      for(let i = 0; i < drops.length; i++) {
+        drops[i].style.display = "none";
+      }
+      drops[status - 1].style.display = "block";
     }
   }
   
@@ -142,6 +242,12 @@
       x.style.display = "none";
     } else {
       x.style.display = "block";
+    }
+  }
+
+  function FilterChange() {
+    if(filterStatus == 0) {
+      // document.body.style.filter = greyscale(100%);
     }
   }
   </script>
