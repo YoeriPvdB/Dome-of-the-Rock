@@ -62,20 +62,43 @@
     
   </nav>
 
+
+  <div class="drop-container" id="dropId">
+
+    <div id="close" onclick="DropChange(0)"> <img src="/assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+      <div class="drop-title">
+        <h1>TEST TITLE</h1>
+        <div class="hl"></div>
+      </div>
+
+      <div class="drop-content">
+          <h3>CONTENT 1</h3>
+          <h3>CONTENT 2</h3>
+          <div class="hl"></div>
+      </div>
+    </div>
+      
+  </div>
+
   
   <div class="side-buttons">
     
     <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-history">
       <a href="assets/pages/history.html">HISTORY</a>
+      <!-- <i class="arrow right"></i> -->
     </button>
   
   
     <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-architecture">
       <a href="#">ARCHITECTURE</a>
+      <!-- <i class="arrow right"></i> -->
     </button>
   
     <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-significance">
       <a href="#">SIGNIFICANCE</a>
+      <!-- <i class="arrow right"></i> -->
     </button>
   </div>
   
@@ -102,6 +125,17 @@
 </body>
 
 <script>
+
+  var drop = document.getElementById("dropId");
+
+  function DropChange(status) {
+    if(status == 1) {
+      drop.style.display = "block";
+    } else {
+      drop.style.display = "none";
+    }
+  }
+  
   function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
