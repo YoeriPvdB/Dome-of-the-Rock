@@ -279,7 +279,8 @@ body {
         display: block;
         
         position: fixed;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
+        background: rgba(255, 215, 0, 0.99);
         width: 100%;
         
     }
