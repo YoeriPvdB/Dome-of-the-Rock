@@ -51,7 +51,10 @@ body {
   /* border-style: solid; */
   height: 90vh;
   z-index: 1;
+
+
 }
+
 
 .drop-segment {
   position: relative;
@@ -62,8 +65,21 @@ body {
   margin-right: 10%;
   /* border: solid green; */
   overflow: hidden;
+
 }
 
+.menu-transition{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+
+}
 #close {
   position: absolute;
     width: 20px;
@@ -163,12 +179,12 @@ body {
     position: absolute;
     top: 90%;
     left: 15%;
-    font-family: Roboto, sans-serif ;
+    font-family: "Roboto Black", sans-serif ;
 
 
 }
 .intro-text2 > h2 {
-    color: black;
+    color: #0f0f0f;
     font-weight: bold;
 }
 .intro-text2 > h2::before {
@@ -253,20 +269,14 @@ body {
 
 
 
-
-
-.btn-block:hover {
-    background-color:#FAD516;
-
-}
-
-
-
-
 .btn-block a {
     color: whitesmoke;
     padding-top: 10px;
     text-decoration: none;
+
+}
+.btn-block a:hover {
+    color: #0f0f0f;
 
 }
 .btn-block{
@@ -293,24 +303,29 @@ body {
     right: 0.1em;
     transition: 0.5s;
     transition-timing-function: ease-in;
+    color: #0f0f0f;
 }
 .btn-block:hover {
     color: #0f0f0f;
     padding-left: 24px;
     padding-right:8px;
- }
+    background-color:#FAD516;
+
+
+}
 .btn-block:hover:after {
     opacity: 1;
     right: 10px;
+    color: #0f0f0f;
 }
 .btn-primary{
     border: 2px solid black;
 }
 .btn-primary:hover{
     border: 2px solid #FAD516;
-;
+    color: #0f0f0f;
 }
-/*animated Button attempt*/
+
 
 .burger-menu {
     display: none;
