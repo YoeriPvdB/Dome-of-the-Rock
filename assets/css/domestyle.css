@@ -41,6 +41,7 @@ body {
 /*}*/
 
 .drop-container {
+  display: none;
   position: absolute;
   margin-top: 5%;
   /* margin-left: 10vw;
@@ -168,6 +169,7 @@ body {
 }
 .intro-text2 > h2 {
     color: black;
+    font-weight: bold;
 }
 .intro-text2 > h2::before {
     content: "";
@@ -187,7 +189,6 @@ body {
     border-radius: 2px;
     background-color:black;
 }
-
 
 
 .side-buttons {
@@ -384,7 +385,7 @@ body {
         display: block;
         
         position: absolute;
-        
+        background: rgba(250, 213, 22, 0.7);
         width: 100%;
         
     }

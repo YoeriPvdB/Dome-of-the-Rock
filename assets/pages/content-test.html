@@ -55,7 +55,7 @@
                 <a class="nav-link" href="#">RELIGION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#">EN/AR</a>
+                <a class="nav-link " href="#">MEDIA</a>
             </li>
             <li class="nav-item">
 
@@ -207,6 +207,20 @@
       x.style.display = "block";
     }
   }
+
+// code for changing the color of navbar on scroll
+  var myNav = document.getElementById('navId');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
 </script>
 
 </html>

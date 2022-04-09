@@ -229,34 +229,143 @@ body {
     margin: auto;
     left: 50%;
     margin-top: 10%;
-    
+    padding-top: 5%;
     width: 70vw;
     height: 60vh;
     overflow-x: hidden; /*or overflow-x:scroll */
-    display: flex;
+    display: block;
     border-style: solid;
   }
+
+
+.timeline {
+    width: 3000px;
+    /* border-style: solid; */
+    margin-top: 10%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 10%;
+}
+
+.timeline > .hl{
+    border-top: 6px solid black;
+    width: 3000px;
+    position: relative;
+   
+    margin-top: 0;
+    /* padding: 5%; */
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.vertical-dashes-top {
+
+    display: flex;
+    position: relative;
+    left: 20%;
+    
+}
+
+.vertical-dashes-bottom {
+
+    display: flex;
+    position: relative;
+    
+}
+
+
+
+.vertical-dashes-bottom > .vl {
+    border-left: 6px solid black;
+    height: 40px;
+    margin-right: 39.7%;
+    
+    
+}
+  
+.vertical-dashes-top > .vl {
+    border-left: 6px solid black;
+    height: 40px;
+    margin-right: 39.7%;
+}
   
   h1 {
     margin: 0;
   }
+  .scroll-content-top {
+      display: flex;
+      margin-left: 7%;
+      
+  }
+
+  .scroll-content-bottom {
+      display: flex;
+      position: relative;
+    margin-top: 10%;
+    margin-left: 7%;
+  }
+
+  .scroll-content-bottom > .scroll-image {
+      max-height: 30%;
+      width: 10%;
+  }
+
+  .scroll-image > img{
+      width: 100%;
+      height: 100%;
+  }
   
-  section {
-    width: 15%;
-    height: 30%;
+  .scroll-content-top > section{
+    min-width: 15%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4ch;
+    
   }
 
-  section:nth-child(even) {
+  .scroll-content-top > section:nth-child(odd){
+    min-width: 15%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+    
+  }
+
+  .scroll-content-bottom > section{
+    min-width: 15%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+    
+  }
+
+
+
+  .scroll-content-bottom > section:nth-child(even) {
+    
     background-color: teal;
     color: white;
-    position: relative;
-    top: 30%;
-  }
 
+    min-width: 15%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+    border-style: solid;
+    
+  }
+  .nav-colored { background-color:#000; }
+  .nav-transparent { background-color:transparent;}
 
 @media (max-width: 1000px) {
     body {
@@ -279,7 +388,8 @@ body {
         display: block;
         
         position: fixed;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
+        background: rgba(255, 215, 0, 0.99);
         width: 100%;
         
     }
