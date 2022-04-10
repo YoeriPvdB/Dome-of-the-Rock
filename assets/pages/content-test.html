@@ -21,9 +21,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        <script>
-            let vh = window.innerHeight;
-        </script>
+    <script>
+        let vh = window.innerHeight;
+    </script>
 </head>
 
 <style>
@@ -35,7 +35,7 @@
 
 <body>
 
-    
+
 
     <img src="../images/homepage.png" alt="" style="position: absolute; left: -1%; width: 100vw; height: 100vh;">
 
@@ -73,23 +73,24 @@
         <h1>Byzantine Era</h1>
     </div>
 
+
     <div class="burger-menu">
-    
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="../images/logo_black.png" alt="">
+            <img src="../images/logo_black.png" alt="">
         </a>
         <div id="myLinks">
-          <a href="#home">HOME</a>
-          <a href="assets/pages/history.html">HISTORY</a>
-          <a href="#about">ARCHITECTURE</a>
-          <a href="#">SIGNIFICANCE</a>
-          <a href="#">EN/AR</a>
-          <a href="#">ACCESSIBILITY</a>
+            <a href="#home">HOME</a>
+            <a href="assets/pages/history.html">HISTORY</a>
+            <a href="#about">ARCHITECTURE</a>
+            <a href="#">SIGNIFICANCE</a>
+            <a href="#">EN/AR</a>
+            <a href="#">ACCESSIBILITY</a>
         </div>
-        
-      </div>
 
-    
+    </div>
+
+
 
     <div class="container">
 
@@ -186,41 +187,64 @@
             <img src="../images/dome1.jpg" alt="test image">
         </div>
 
+        <footer class="footer">
+            <div class="footer-source">
+                <h3>RESOURCES</h3>
+                <h5>RESOURCE</h5>
+            </div>
+
+            <div class="vl"></div>
+            <div class="footer-social">
+                <h3>SOCIAL MEDIA</h3>
+                <h5> <a href="https://twitter.com/DomeOfTheRock01" target="_blank">TWITTER</a></h5>
+                <h5><a href="https://www.instagram.com/domeoftherock01/" target="_blank">INSTAGRAM</a></h5>
+                <h5>YOUTUBE</h5>
+            </div>
+
+            <div class="vl"></div>
+            <div class="footer-content">
+                <div class="footer-content-piece">
+                    <h3>CONTENT</h3>
+                    <h5><a href="../pages/history.html">HISTORY</a></h5>
+                    <h5><a href="../pages/architecture.html">ARCHITECTURE</a></h5>
+                    <h5><a href="../pages/significance.html">SIGNIFICANCE</a></h5>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
     
 
-    
 
 </body>
 
 
 <script>
-    
+
 
     function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
-  }
 
-// code for changing the color of navbar on scroll
-  var myNav = document.getElementById('navId');
-window.onscroll = function () { 
-    "use strict";
-    if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-    }
-};
+    // code for changing the color of navbar on scroll
+    var myNav = document.getElementById('navId');
+    window.onscroll = function () {
+        "use strict";
+        if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000) {
+            myNav.classList.add("nav-colored");
+            myNav.classList.remove("nav-transparent");
+        }
+        else {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-colored");
+        }
+    };
 </script>
 
 </html>
