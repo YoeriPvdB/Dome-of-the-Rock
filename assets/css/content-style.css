@@ -92,6 +92,10 @@ li{
     /* border: solid green; */
     overflow: hidden;
 }
+
+.drop-title>a{
+    text-decoration: none;
+}
 /* drop menu animation class */
 .menu-transition{
     animation: fadeIn 1s;
@@ -189,18 +193,18 @@ li{
     color: white;
     z-index: 20;
 }
-.intro-text > h1::before {
-    z-index: 10;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 75%;
-    bottom: 25px;
-    left: -20px;
-    padding: 0%;
-    background: rgba(255, 215, 0, 0.5);
-    /*z-index: -1;*/
-  }
+/*.intro-text > h1::before {*/
+/*    z-index: 10;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 75%;*/
+/*    bottom: 25px;*/
+/*    left: -20px;*/
+/*    padding: 0%;*/
+/*    background: rgba(255, 215, 0, 0.5);*/
+/*    !*z-index: -1;*!*/
+/*  }*/
 
 .btn-block {
     position: relative;
