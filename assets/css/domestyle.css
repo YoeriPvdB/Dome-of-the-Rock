@@ -3,6 +3,7 @@
     padding-right:30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: white;
   }
 
 body {
@@ -31,6 +32,15 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #FAD516;
 }
+li{
+    color: white;
+}
+.nav-item{
+    color: white;
+}
+.navbar a {
+    color:white;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -54,7 +64,15 @@ body {
 
 
 }
-
+.drop-content>h3>a{
+    transition: 0.8s;
+    color: white;
+    text-decoration: none;
+}
+.drop-content>h3>a:hover
+{
+    color: #FAD516;
+}
 
 .drop-segment {
   position: relative;
