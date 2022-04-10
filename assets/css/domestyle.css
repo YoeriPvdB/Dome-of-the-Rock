@@ -42,6 +42,10 @@ li{
 .nav-item{
     color: white;
 }
+
+.nav>li>a:hover, .nav>li>a:focus {
+  color: #FAD516;
+}
 .navbar a {
     color:white;
 }
