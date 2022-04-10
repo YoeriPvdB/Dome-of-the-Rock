@@ -8,7 +8,7 @@
   <title>History</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/content-style.css">
+  <link rel="stylesheet" href="../css/timeline-style.css">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -55,146 +55,111 @@
 
   </nav>
 
-  <div class="scroll-container">
+  <div class="container">
 
-   
-    
-    <div class="timeline">
-
-      <!-- <div class="scroll-content-top">
-        <section class="scroll-image">
-          <img src="../images/logo_black.png" alt="">
-        </section>
-  
-        <section class="scroll-image">
-          <img src="../images/logo_black.png" alt="">
-        </section>
-  
-        <section class="scroll-image">
-          <img src="../images/logo_black.png" alt="">
-        </section>
-  
-        <section class="scroll-image">
-          <img src="../images/logo_black.png" alt="">
-        </section>
-      </div> -->
-
-      <div class="scroll-top">
-        <div class="scroll-content">
-      
-          <img src="../images/timelineImages/950BC.JPG" alt="">
-          <div class="vl" id="topLine"></div>
-          
-        </div>
-
-        <div class="scroll-content-text-top">
-          <h2>587 BC</h2>
-          <h5>Destroyed in 587 BC</h5>
-        </div>
-  
-        <div class="scroll-content">
-        
-          <img src="../images/timelineImages/167BC.jpg" alt="">
-          <div class="vl" id="topLine"></div>
-          
-        </div>
-
-        <div class="scroll-content-text-top">
-          <h2>167 BC</h2>
-          <h5>Antiochus IV pillages the Temple </h5>
-        </div>
-      </div>
-      
-
-      
-      <!-- <div class="vertical-dashes-top">
-
-        
-        
-        <div class="vl" id="topLine"></div>
-        <div class="vl" id="topLine"></div>
-      </div> -->
-
-      <div class="hl"></div>
-
-      <div class="scroll-bottom"> 
-        <div class="scroll-content-text">
-          <h2>950 BC</h2>
-          <h5>First temple is constructed on the mount</h5>
-        </div>
-
-        <div class="scroll-content">
-      
-          <div class="vl" id="topLine"></div>
-          <img src="../images/timelineImages/587BC.PNG" alt="">
-          
-        </div>
-  
-        <div class="scroll-content-text">
-          <h2>455 AD</h2>
-          <h5>Some stuff happened during this time</h5>
-        </div>
-
-        <div class="scroll-content">
-      
-          <div class="vl" id="topLine"></div>
-          <img src="../images/dome1.jpg" alt="">
-          
-        </div>
-      </div>
-
-      
-  
-      <!-- <div class="vertical-dashes-bottom">
-        <div class="vl" id="topLine"></div>
-        <div class="vl" id="topLine"></div>
-        <div class="vl" id="topLine"></div>
-      </div>
-  
-       -->
-  
-      
-
+    <div class="info-container">
+      <h5>Dome of the Rock</h5>
+      <h1>HISTORY</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dolores tempore ratione ipsa! Ipsum, dolorum incidunt est temporibus esse repellat culpa similique, quos eveniet veritatis voluptas non id, ducimus alias!</p>
     </div>
 
-    
-
-
-    <!-- <div class="scroll-content-bottom">
-
-      
-      <section class="scroll-image">
-        <img src="../images/logo_black.png" alt="">
-      </section>
-  
-      
-  
-      <section class="scroll-image">
-        <img src="../images/logo_black.png" alt="">
-      </section>
-
-      <section class="scroll-image">
-        <img src="../images/logo_black.png" alt="">
-      </section>
-     
-    </div> -->
-
-    
+    <div class="scroll-container">
 
 
 
-    
+      <div class="timeline">
+
+
+
+        <div class="scroll-top">
+          <div class="scroll-content" style="margin-left:10%">
+
+            <img src="../images/timelineImages/950BC.JPG" alt="">
+            <div class="vl" id="topLine"></div>
+
+          </div>
+
+          <div class="scroll-content-text-top">
+            <h2>587 BC</h2>
+            <h5>Destroyed in 587 BC</h5>
+          </div>
+
+          <div class="scroll-content">
+
+            <img src="../images/timelineImages/167BC.jpg" alt="">
+            <div class="vl" id="topLine"></div>
+
+          </div>
+
+          <div class="scroll-content-text-top">
+            <h2>167 BC</h2>
+            <h5>Antiochus IV pillages the Temple </h5>
+          </div>
+        </div>
+
+
+        <div class="hl"></div>
+
+        <div class="scroll-bottom">
+          <div class="scroll-content-text" style="margin-left:10%">
+            <h2>950 BC</h2>
+            <h5>First temple is constructed on the mount</h5>
+          </div>
+
+          <div class="scroll-content">
+
+            <div class="vl" id="topLine"></div>
+            <img src="../images/timelineImages/587BC.PNG" alt="">
+
+          </div>
+
+          <div class="scroll-content-text">
+            <h2>455 AD</h2>
+            <h5>Some stuff happened during this time</h5>
+          </div>
+
+          <div class="scroll-content">
+
+            <div class="vl" id="topLine"></div>
+            <img src="../images/dome1.jpg" alt="">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
 
-  <script>
+  <div class="mobile-container">
+    <div class="mobile-header">
+        <div class="burger-menu">
 
-    const scrollContainer = document.querySelector(".scroll-container");
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <img src="../images/logo_black.png" alt="">
+            </a>
+            <div id="myLinks">
+              <a href="#home">HOME</a>
+              <a href="assets/pages/history.html">HISTORY</a>
+              <a href="#about">ARCHITECTURE</a>
+              <a href="#">SIGNIFICANCE</a>
+              <a href="#">MEDIA</a>
+              <a href="#">ACCESSIBILITY</a>
+            </div>
+        
+        </div>
 
-    scrollContainer.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaY;
-    });
+        <div class="header-content">
+            <h1>Dome of the Rock</h1>
+            <h2>History Timeline</h2>
+        </div>
+    </div>
+</div>
+
+  <script src="../scripts/dome-script.js">
+
+    
 
   </script>
 </body>

@@ -19,7 +19,17 @@ function DropChange(status) {
         drops[status-1].classList.add("menu-transition");
 
     }
+
+
 }
+
+const scrollContainer = document.querySelector(".scroll-container");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+
 
 function myFunction() {
     var x = document.getElementById("myLinks");
