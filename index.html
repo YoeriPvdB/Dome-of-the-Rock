@@ -27,6 +27,8 @@
     /*  background-size: cover;*/
     /*}*/
   </style>
+
+
 </head>
 
 
@@ -35,28 +37,28 @@
 <!-- navigation bar starts -->
 
   <nav class="navbar navbar-expand-lg navbar-light opacity sticky">
-    <a class="navbar-brand" href="index.html" onclick=""> <img src="assets/images/blackbg%20-%20round(2).png" width="80" height="80"  alt="logo"> </a>
+    <a class="navbar-brand" href="index.html" onclick="" style="margin-left: 2%"> <img src="assets/images/blackbg%20-%20round(2).png" width="80" height="80"  alt="logo"> </a>
 
     <ul class="navbar-nav">
 
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab">HISTORY</a>
+        <a class="nav-link" href="assets/pages/history.html" aria-label="history navbar tab" id="history-link">HISTORY</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="DropChange(2)" aria-label="architecture navbar tab">ARCHITECTURE</a>
+        <a class="nav-link" href="assets/pages/architecture.html"  aria-label="architecture navbar tab" id="arch-link">ARCHITECTURE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="DropChange(3)" aria-label="significance navbar tab">SIGNIFICANCE</a>
+        <a class="nav-link" href="assets/pages/significance.html"  aria-label="significance navbar tab" id="signi-link">SIGNIFICANCE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab">MEDIA</a>
+        <a class="nav-link " href="#" aria-label="media navbar tab" id="media-link">MEDIA</a>
       </li>
 
 
 
     </ul>
-    <div class=" nav navbar social-media ms-auto">
-      <a class="nav-link" href="#" onclick="DropChange(5)" aria-label="accessibility settings">
+    <div class=" nav navbar social-media ms-auto" style="margin-right: 2%">
+      <a class="nav-link" href="#" onclick="DropChange(5, id)" aria-label="accessibility settings" id="access-link">
         <img src="assets/images/icons/setting.png" height="38" width="38" alt="accessibility settings icon for dome of the rock" >
       </a>
         <a href="https://www.instagram.com/domeoftherock01/" class="nav-item nav-link" target="_blank">
@@ -84,7 +86,7 @@
 
   <div class="drop-container" id="history-drop" aria-label="history navbar drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
@@ -104,7 +106,7 @@
 
   <div class="drop-container" id="arch-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
@@ -124,7 +126,7 @@
 
   <div class="drop-container" id="signi-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
@@ -144,7 +146,7 @@
 
   <div class="drop-container" id="lang-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
@@ -163,7 +165,7 @@
 
   <div class="drop-container" id="access-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
       <div class="drop-title">
@@ -268,7 +270,9 @@
 
   </div>
 
-  <script src="assets/scripts/dome-script.js"></script>
+  <script src="assets/scripts/dome-script.js">
+    
+  </script>
 </body>
 
 

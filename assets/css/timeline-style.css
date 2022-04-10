@@ -14,7 +14,7 @@ p {
     line-height: 1.6;
 }
 
-
+.nav-colored { background-color:#000; }
 
 .navbar-light .navbar-nav .nav-link {
     font: italic;
@@ -23,7 +23,7 @@ p {
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: white
+    color: #FAD516
 }
 
 .sticky {
@@ -31,6 +31,135 @@ p {
     top: 0;
     width: 100%;
 }
+
+.social-media>a{
+    transition: transform 0.5s;
+}
+.social-media>a:hover{
+    transform: rotate(180deg);
+}
+
+/* drop down menu style navbar */
+.drop-container {
+    display: none;
+    position: absolute;
+    
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
+    width: 100%;
+    background-color: black;
+    /* border-style: solid; */
+    height: 80vh;
+    z-index: 1;
+  }
+  
+  .drop-content>h3>a
+  {
+      transition: 0.8s;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .drop-content>h3>a:hover
+  {
+      color: #FAD516;
+  }
+  
+  .drop-segment
+  {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: solid green; */
+    overflow: hidden;
+  }
+  /* drop menu animation class */
+  .menu-transition{
+      animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity:1;
+      }
+  
+  }
+  /*  end of drop menu animation class */
+  #close {
+    position: absolute;
+      width: 20px;
+      weight: 20px;
+      right: 0;
+      margin: 3%;
+      cursor: pointer;
+  }
+  
+  #close > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .drop-container h1 {
+    color: white;
+  }
+  
+  .drop-container h3 {
+    color: white;
+  }
+  
+  .hl {
+    border-top: 6px solid white;
+    width: 100%;
+    position: relative;
+    /* margin-top: */
+    margin-left: -3px;
+    
+  }
+  
+  .drop-title {
+    position: relative;
+    
+  }
+  
+  .drop-content {
+    position: relative;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 25%;
+  }
+  
+  
+  
+  .drop-content > h3 {
+    /* padding: 1%; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .drop-content > .hl {
+    width: 100%;
+    margin-top: 1%;
+  }
+  
+  .drop-toggle {
+    display: flex;
+    margin: 10%;
+  }
+  
+  .drop-toggle > button {
+    margin-left: 1%;
+    height: 10%;
+  }
+  
+  .drop-toggle-buttons {
+    margin-left: 10%;
+  }
+  /*end of dropdown  */
 
 /*.navbar {*/
 /*    background: rgba(0,0, 0, 0.5);*/

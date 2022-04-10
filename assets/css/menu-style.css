@@ -21,7 +21,14 @@ p {
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: white
+    color: #FAD516
+}
+
+.social-media>a{
+    transition: transform 0.5s;
+}
+.social-media>a:hover{
+    transform: rotate(180deg);
 }
 
 .sticky {

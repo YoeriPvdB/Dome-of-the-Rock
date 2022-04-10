@@ -34,16 +34,16 @@
     <ul class="navbar-nav">
 
         <li class="nav-item">
-            <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab">HISTORY</a>
+            <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab" id="history-link">HISTORY</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" onclick="DropChange(2)" aria-label="architecture navbar tab">ARCHITECTURE</a>
+            <a class="nav-link" href="#" onclick="DropChange(2)" aria-label="architecture navbar tab" id="history-link">ARCHITECTURE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" onclick="DropChange(3)" aria-label="significance navbar tab">SIGNIFICANCE</a>
+            <a class="nav-link" href="#" onclick="DropChange(3)" aria-label="significance navbar tab" id="history-link">SIGNIFICANCE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab">MEDIA</a>
+            <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab" id="history-link">MEDIA</a>
         </li>
 
 
@@ -78,7 +78,7 @@
 
 <div class="drop-container" id="history-drop" aria-label="history navbar drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropClose()" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
         <div class="drop-title">
@@ -98,7 +98,7 @@
 
 <div class="drop-container" id="arch-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropClose()" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
         <div class="drop-title">
@@ -118,7 +118,7 @@
 
 <div class="drop-container" id="signi-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropClose()" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
         <div class="drop-title">
@@ -138,7 +138,7 @@
 
 <div class="drop-container" id="lang-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropClose()" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
         <div class="drop-title">
@@ -157,7 +157,7 @@
 
 <div class="drop-container" id="access-drop">
 
-    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+    <div id="close" onclick="DropClose()" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
 
     <div class="drop-segment">
         <div class="drop-title">

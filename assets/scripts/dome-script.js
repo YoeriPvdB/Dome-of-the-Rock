@@ -1,26 +1,46 @@
 var drops = [document.getElementById("history-drop"), document.getElementById("arch-drop"), document.getElementById("signi-drop"), document.getElementById("lang-drop"), document.getElementById("access-drop")];
-
+var tabLinks = [document.getElementById("history-link"), document.getElementById("arch-link"), document.getElementById("signi-link"), document.getElementById("media-link")];
 
 var filterStatus = 0;
+var openedTab; 
+var navColour;
 
-function DropChange(status) {
-    if (status == 0) {
-        for (let i = 0; i < drops.length; i++) {
-            drops[i].style.display = "none";
+function DropChange(status, id) {
 
+    openedTab = id;
+    var check = document.title;
+    for(let i = 0; i < tabLinks.length; i++) {
+       
+        if(check ==="History" || check ==="Architecture" || check ==="Significance") {
+            tabLinks[i].style.color = "black";
+        } else {
+            tabLinks[i].style.color = "white";
         }
-
-    } else {
-
-        for (let i = 0; i < drops.length; i++) {
-            drops[i].style.display = "none";
-        }
-        drops[status - 1].style.display = "block";
-        drops[status-1].classList.add("menu-transition");
-
     }
+    for (let i = 0; i < drops.length; i++) {
+        drops[i].style.display = "none";
+    }
+    document.getElementById(openedTab).style.color = "#FAD516";
+    drops[status - 1].style.display = "block";
+    drops[status-1].classList.add("menu-transition");
 
+    
 
+}
+
+function CloseDrop() {
+    var check = document.title;
+    
+    if(check ==="History" || check ==="Architecture" || check ==="Significance") {
+        document.getElementById(openedTab).style.color = "black";
+    } else {
+        document.getElementById(openedTab).style.color = "white";
+    }
+    
+        for (let i = 0; i < drops.length; i++) {
+            drops[i].style.display = "none";
+
+        }
 }
 
 const scrollContainer = document.querySelector(".scroll-container");
@@ -62,3 +82,4 @@ function FilterChange() {
 
 
 }
+
