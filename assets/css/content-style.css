@@ -18,9 +18,9 @@ body {
 }
 
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: white
-}
+/*.navbar-light .navbar-nav .nav-link:hover {*/
+/*    color: white*/
+/*}*/
 .sticky {
     position: sticky;
     top: 0;
@@ -30,6 +30,9 @@ body {
 /*    background: rgba(0,0, 0, 0.5);*/
 /*}*/
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FAD516;
+}
 
 .intro-text  {
     display: inline-block;
