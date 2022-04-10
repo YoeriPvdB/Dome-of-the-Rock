@@ -67,7 +67,7 @@ function FilterChange() {
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.filter = "grayscale(100%)";
         }
-
+        document.getElementById("grey-btn").style.backgroundColor="#b1b1b1"
         filterStatus = 1;
 
     } else {
@@ -76,6 +76,7 @@ function FilterChange() {
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.filter = "grayscale(0)";
         }
+        document.getElementById("grey-btn").style.backgroundColor="#FAD516"
 
         filterStatus = 0;
     }

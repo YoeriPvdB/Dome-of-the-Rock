@@ -181,8 +181,19 @@ li{
 .drop-toggle > button {
   margin-left: 1%;
   height: 10%;
+   border: 5px white;
+
+    padding: 1%;
+
 }
 
+#grey-btn{
+    background-color: #FAD516;
+    transition: 0.5s;
+}
+#grey-btn:hover{
+    background-color: #dcaf39;
+}
 .drop-toggle-buttons {
   margin-left: 10%;
 }
