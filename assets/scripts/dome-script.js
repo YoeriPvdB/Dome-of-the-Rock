@@ -7,6 +7,7 @@ function DropChange(status) {
     if (status == 0) {
         for (let i = 0; i < drops.length; i++) {
             drops[i].style.display = "none";
+
         }
 
     } else {
@@ -15,6 +16,8 @@ function DropChange(status) {
             drops[i].style.display = "none";
         }
         drops[status - 1].style.display = "block";
+        drops[status-1].classList.add("menu-transition");
+
     }
 
 

@@ -3,6 +3,7 @@
     padding-right:30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: white;
   }
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
@@ -32,6 +33,21 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #FAD516;
 }
+
+
+.navbar-light .navbar-nav .nav-link :active {
+    color: #FAD516;
+}
+
+li{
+    color: white;
+}
+.nav-item{
+    color: white;
+}
+.navbar a {
+    color:white;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -40,7 +56,12 @@ body {
 /*.navbar {*/
 /*    background: rgba(0,0, 0, 0.5);*/
 /*}*/
-
+.social-media>a{
+    transition: transform 0.5s;
+}
+.social-media>a:hover{
+    transform: rotate(180deg);
+}
 .drop-container {
   display: none;
   position: absolute;
@@ -52,6 +73,17 @@ body {
   /* border-style: solid; */
   height: 90vh;
   z-index: 1;
+
+
+}
+.drop-content>h3>a{
+    transition: 0.8s;
+    color: white;
+    text-decoration: none;
+}
+.drop-content>h3>a:hover
+{
+    color: #FAD516;
 }
 
 .drop-segment {
@@ -63,8 +95,21 @@ body {
   margin-right: 10%;
   /* border: solid green; */
   overflow: hidden;
+
 }
 
+.menu-transition{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+
+}
 #close {
   position: absolute;
     width: 20px;
@@ -158,18 +203,20 @@ body {
   }
 
 
+
 .intro-text2  {
     display: inline-block;
     position: absolute;
     top: 90%;
     left: 15%;
-    font-family: Roboto, sans-serif ;
+    font-family: "Roboto Black", sans-serif ;
 
 
 }
 .intro-text2 > h2 {
-    color: black;
+    color: #0f0f0f;
     font-weight: bold;
+    text-shadow:1px 1px 1px #FAD516;
 }
 .intro-text2 > h2::before {
     content: "";
@@ -189,6 +236,7 @@ body {
     border-radius: 2px;
     background-color:black;
 }
+
 
 .side-buttons {
    
@@ -252,20 +300,14 @@ body {
 
 
 
-
-
-.btn-block:hover {
-    background-color:#FAD516;
-
-}
-
-
-
-
 .btn-block a {
     color: whitesmoke;
     padding-top: 10px;
     text-decoration: none;
+
+}
+.btn-block a:hover {
+    color: #0f0f0f;
 
 }
 .btn-block{
@@ -292,24 +334,29 @@ body {
     right: 0.1em;
     transition: 0.5s;
     transition-timing-function: ease-in;
+    color: #0f0f0f;
 }
 .btn-block:hover {
     color: #0f0f0f;
     padding-left: 24px;
     padding-right:8px;
- }
+    background-color:#FAD516;
+
+
+}
 .btn-block:hover:after {
     opacity: 1;
     right: 10px;
+    color: #0f0f0f;
 }
 .btn-primary{
     border: 2px solid black;
 }
 .btn-primary:hover{
     border: 2px solid #FAD516;
-;
+    color: #0f0f0f;
 }
-/*animated Button attempt*/
+
 
 .burger-menu {
     display: none;
@@ -379,6 +426,9 @@ body {
     .navbar {
         display: none;
     }
+
+
+
 
     .burger-menu {
         display: block;
