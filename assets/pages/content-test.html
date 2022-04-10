@@ -37,40 +37,176 @@
 
 
 
-    <img src="../images/homepage.png" alt="" style="position: absolute; left: -1%; width: 100vw; height: 100vh;">
+    <img src="../../assets/images/beforeDome.png" alt="" style="position: absolute; left: -1%; width: 100vw; height: 100vh;">
+    <!-- navigation bar starts -->
 
     <nav class="navbar navbar-expand-lg navbar-light opacity sticky" id="navId">
+        <a class="navbar-brand" href="../../index.html" onclick=""> <img src="../../assets/images/blackbg%20-%20round(2).png" width="80" height="80"  alt="logo"> </a>
 
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">HISTORY</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ARCHITECTURE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">RELIGION</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">MEDIA</a>
-            </li>
-            <li class="nav-item">
 
-                <a class="nav-link" href="#">
-                    ACCESSIBILITY
-                </a>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab">HISTORY</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="DropChange(2)" aria-label="architecture navbar tab">ARCHITECTURE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="DropChange(3)" aria-label="significance navbar tab">SIGNIFICANCE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab">MEDIA</a>
+            </li>
+
 
 
         </ul>
+        <div class=" nav navbar social-media ms-auto">
+            <a class="nav-link" href="#" onclick="DropChange(5)" aria-label="accessibility settings">
+                <img src="../../assets/images/icons/setting.png" height="38" width="38" alt="accessibility settings icon for dome of the rock" >
+            </a>
+            <a href="https://www.instagram.com/domeoftherock01/" class="nav-item nav-link" target="_blank">
+                <img src="../../assets/images/icons/instagram.png" height="38" width="38" alt="instagram for dome of the rock" >
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCkh50TB4HkNJ_jSmOt1otrQ" class="nav-item nav-link" target="_blank">
+                <img src="../../assets/images/icons/youtube.png" height="38" width="38" alt="youtube for dome of the rock">
+            </a>
+
+            <a href="https://twitter.com/DomeOfTheRock01" class="nav-item nav-link" target="_blank">
+                <img src="../../assets/images/icons/twitter.png" height="38" width="38" alt="twitter for dome of the rock">
+            </a>
+
+
+        </div>
+
 
     </nav>
 
+
+    <!-- navigation bar ends -->
+
+    <!-- navigation bar drop down starts -->
+
+    <div class="drop-container" id="history-drop" aria-label="history navbar drop">
+
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+        <div class="drop-segment">
+            <div class="drop-title">
+                <h1>HISTORY</h1>
+                <div class="hl"></div>
+            </div>
+
+            <div class="drop-content">
+                <h3><a href="../../assets/pages/history.html">TIMELINE </a></h3>
+                <h3><a href="../../assets/pages/content-test.html">BEFORE DOME OF THE ROCK </a></h3>
+                <h3><a href="#">AFTER DOME OF THE ROCK</a> </h3>
+                <div class="hl"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="drop-container" id="arch-drop">
+
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+        <div class="drop-segment">
+            <div class="drop-title">
+                <h1>ARCHITECTURE</h1>
+                <div class="hl"></div>
+            </div>
+
+            <div class="drop-content">
+                <h3> <a href="../../assets/pages/architecture-construction.html">CONSTRUCTION </a></h3>
+                <h3><a href="../../assets/pages/architecture-shapeAppearance.html">SHAPE AND APPEARANCE </a></h3>
+                <h3><a href="../../assets/pages/architecture-mosaics.html">MOSAICS</a></h3>
+                <div class="hl"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="drop-container" id="signi-drop">
+
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+        <div class="drop-segment">
+            <div class="drop-title">
+                <h1> SIGNIFICANCE</h1>
+                <div class="hl"></div>
+            </div>
+
+            <div class="drop-content">
+                <h3><a href="../../assets/pages/significance-islam.html">ISLAM </a> </h3>
+                <h3><a href="../../assets/pages/significance-judaism.html"> JUDAISM</a> </h3>
+                <h3><a href="../../assets/pages/significance-christianity.html">CHRISTIANITY</a> </h3>
+                <div class="hl"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="drop-container" id="lang-drop">
+
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+        <div class="drop-segment">
+            <div class="drop-title">
+                <h1>MEDIA</h1>
+                <div class="hl"></div>
+            </div>
+
+            <div class="drop-content">
+                <h3>ENGLISH</h3>
+                <h3>LANGUAGE 2</h3>
+                <div class="hl"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="drop-container" id="access-drop">
+
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+        <div class="drop-segment">
+            <div class="drop-title">
+                <h1>ACCESSIBILITY</h1>
+                <div class="hl"></div>
+            </div>
+
+            <div class="drop-content">
+
+                <div class="drop-toggle" id="toggle-text">
+                    <h3>TEXT-SIZE</h3>
+                    <div class="drop-toggle-buttons"></div>
+                    <button>
+                        <h3>A</h3>
+                    </button>
+                    <button>
+                        <h2>A</h2>
+                    </button>
+                    <button>
+                        <h1>A</h1>
+                    </button>
+                </div>
+
+                <div class="drop-toggle">
+                    <h3>GREYSCALE</h3>
+                    <button onclick="FilterChange()">ON/OFF</button>
+                </div>
+
+                <div class="hl"></div>
+            </div>
+        </div>
+
+    </div>
+<!-- Navigation bar drop down ends -->
+
     <div class="intro-text">
-        <h1>Byzantine Era</h1>
+        <h1>Before Dome of the Rock</h1>
     </div>
 
 
@@ -80,12 +216,12 @@
             <img src="../images/logo_black.png" alt="">
         </a>
         <div id="myLinks">
-            <a href="#home">HOME</a>
-            <a href="assets/pages/history.html">HISTORY</a>
-            <a href="#about">ARCHITECTURE</a>
-            <a href="#">SIGNIFICANCE</a>
-            <a href="#">EN/AR</a>
-            <a href="#">ACCESSIBILITY</a>
+          <a href="../../index.html">HOME</a>
+          <a href="../../assets/pages/history.html">HISTORY</a>
+          <a href="../../assets/pages/architecture.html">ARCHITECTURE</a>
+          <a href="../../assets/pages/significance.html">SIGNIFICANCE</a>
+<!--          <a href="#">EN/AR</a>-->
+          <a href="#">ACCESSIBILITY</a>
         </div>
 
     </div>
@@ -214,8 +350,9 @@
 
     </div>
 
-    
 
+
+    <script src="../../assets/scripts/dome-script.js"></script>
 
 </body>
 
@@ -231,20 +368,35 @@
             x.style.display = "block";
         }
     }
+  
 
-    // code for changing the color of navbar on scroll
-    var myNav = document.getElementById('navId');
-    window.onscroll = function () {
+// code for changing the color of navbar on scroll
+  var myNav = document.getElementById('navId');
+// window.onscroll = function () {
+//     "use strict";
+//     if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000 ) {
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//     }
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//     }
+// };
+
+    window.onscroll=function (){
         "use strict";
-        if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000) {
+        if(window.scrollY>window.innerHeight)
+        {
             myNav.classList.add("nav-colored");
             myNav.classList.remove("nav-transparent");
         }
-        else {
+        else
+        {
             myNav.classList.add("nav-transparent");
             myNav.classList.remove("nav-colored");
         }
-    };
+    }
 </script>
 
 </html>
