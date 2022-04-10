@@ -120,6 +120,12 @@ p {
     display: none;
 }
 
+.carousel-indicators {
+    
+    left: 38%;
+    width: 10%;
+    /* background-color: aqua; */
+}
 
 
 @media (max-width: 800px) {
