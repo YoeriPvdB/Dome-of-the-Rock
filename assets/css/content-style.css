@@ -80,7 +80,7 @@ li{
     width: 100%;
     background-color: black;
     /* border-style: solid; */
-    height: 90vh;
+    height: 80vh;
     z-index: 1;
 }
 
@@ -96,6 +96,12 @@ li{
     color: #FAD516;
 }
 
+.navbar-brand {
+    margin-left: 2%;
+  }
+  .social-media {
+    margin-right:2%;
+  }
 
 .drop-segment
 {

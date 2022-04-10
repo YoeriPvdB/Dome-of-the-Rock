@@ -37,25 +37,25 @@
         <ul class="navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab">HISTORY</a>
+                <a class="nav-link" href="#" onclick="DropChange(1, id)" aria-label="history navbar tab" id="history-link">HISTORY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="DropChange(2)"
-                    aria-label="architecture navbar tab">ARCHITECTURE</a>
+                <a class="nav-link" href="#" onclick="DropChange(2, id)"
+                    aria-label="architecture navbar tab" id="arch-link">ARCHITECTURE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="DropChange(3)"
-                    aria-label="significance navbar tab">SIGNIFICANCE</a>
+                <a class="nav-link" href="#" onclick="DropChange(3, id)"
+                    aria-label="significance navbar tab" id="signi-link">SIGNIFICANCE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab">MEDIA</a>
+                <a class="nav-link " href="../pages/media.html" onclick="DropChange(4, id)" aria-label="media navbar tab" id="media-link">MEDIA</a>
             </li>
 
 
 
         </ul>
         <div class=" nav navbar social-media ms-auto">
-            <a class="nav-link" href="#" onclick="DropChange(5)" aria-label="accessibility settings">
+            <a class="nav-link" href="#" onclick="DropChange(4, id)" aria-label="accessibility settings" id="access-link">
                 <img src="../../assets/images/icons/setting.png" height="38" width="38"
                     alt="accessibility settings icon for dome of the rock">
             </a>
@@ -82,14 +82,15 @@
     </nav>
 
 
+
     <!-- navigation bar ends -->
 
     <!-- navigation bar drop down starts -->
 
     <div class="drop-container" id="history-drop" aria-label="history navbar drop">
 
-        <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img
-                src="../images/cancel.png" alt=""></div>
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+                src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
             <div class="drop-title">
@@ -98,8 +99,8 @@
             </div>
 
             <div class="drop-content">
-                <h3><a href="assets/pages/history.html">TIMELINE </a></h3>
-                <h3><a href="assets/pages/content-test.html">BEFORE DOME OF THE ROCK </a></h3>
+                <h3><a href="../../assets/pages/history.html">TIMELINE </a></h3>
+                <h3><a href="../../assets/pages/history-preIslamic.html">BEFORE DOME OF THE ROCK </a></h3>
                 <h3><a href="#">AFTER DOME OF THE ROCK</a> </h3>
                 <div class="hl"></div>
             </div>
@@ -109,8 +110,8 @@
 
     <div class="drop-container" id="arch-drop">
 
-        <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img
-                src="assets/images/cancel.png" alt=""></div>
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+                src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
             <div class="drop-title">
@@ -119,9 +120,9 @@
             </div>
 
             <div class="drop-content">
-                <h3> <a href="assets/pages/architecture-construction.html">CONSTRUCTION </a></h3>
-                <h3><a href="assets/pages/architecture-shapeAppearance.html">SHAPE AND APPEARANCE </a></h3>
-                <h3><a href="assets/pages/architecture-mosaics.html">MOSAICS</a></h3>
+                <h3> <a href="../../assets/pages/architecture-construction.html">CONSTRUCTION </a></h3>
+                <h3><a href="../../assets/pages/architecture-shapeAppearance.html">SHAPE AND APPEARANCE </a></h3>
+                <h3><a href="../../assets/pages/architecture-mosaics.html">MOSAICS</a></h3>
                 <div class="hl"></div>
             </div>
         </div>
@@ -130,8 +131,8 @@
 
     <div class="drop-container" id="signi-drop">
 
-        <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img
-                src="assets/images/cancel.png" alt=""></div>
+        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+                src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
             <div class="drop-title">
@@ -140,74 +141,16 @@
             </div>
 
             <div class="drop-content">
-                <h3><a href="assets/pages/significance-islam.html">ISLAM </a> </h3>
-                <h3><a href="assets/pages/significance-judaism.html"> JUDAISM</a> </h3>
-                <h3><a href="assets/pages/significance-christianity.html">CHRISTIANITY</a> </h3>
+                <h3><a href="../../assets/pages/significance-islam.html">ISLAM </a> </h3>
+                <h3><a href="../../assets/pages/significance-judaism.html"> JUDAISM</a> </h3>
+                <h3><a href="../../assets/pages/significance-christianity.html">CHRISTIANITY</a> </h3>
                 <div class="hl"></div>
             </div>
         </div>
 
     </div>
 
-    <div class="drop-container" id="lang-drop">
-
-        <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img
-                src="assets/images/cancel.png" alt=""></div>
-
-        <div class="drop-segment">
-            <div class="drop-title">
-                <h1>MEDIA</h1>
-                <div class="hl"></div>
-            </div>
-
-            <div class="drop-content">
-                <h3>ENGLISH</h3>
-                <h3>LANGUAGE 2</h3>
-                <div class="hl"></div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="drop-container" id="access-drop">
-
-        <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img
-                src="assets/images/cancel.png" alt=""></div>
-
-        <div class="drop-segment">
-            <div class="drop-title">
-                <h1>ACCESSIBILITY</h1>
-                <div class="hl"></div>
-            </div>
-
-            <div class="drop-content">
-
-                <div class="drop-toggle" id="toggle-text">
-                    <h3>TEXT-SIZE</h3>
-                    <div class="drop-toggle-buttons"></div>
-                    <button>
-                        <h3>A</h3>
-                    </button>
-                    <button>
-                        <h2>A</h2>
-                    </button>
-                    <button>
-                        <h1>A</h1>
-                    </button>
-                </div>
-
-                <div class="drop-toggle">
-                    <h3>GREYSCALE</h3>
-                    <button onclick="FilterChange()">ON/OFF</button>
-                </div>
-
-                <div class="hl"></div>
-            </div>
-        </div>
-
-    </div>
-
-
+    
 
     <div class="drop-container" id="access-drop">
 
@@ -216,25 +159,11 @@
 
         <div class="drop-segment">
             <div class="drop-title">
-                <h1>ACCESSIBILITY</h1>
+                <h1>SETTINGS</h1>
                 <div class="hl"></div>
             </div>
 
             <div class="drop-content">
-
-                <div class="drop-toggle" id="toggle-text">
-                    <h3>TEXT-SIZE</h3>
-                    <div class="drop-toggle-buttons"></div>
-                    <button>
-                        <h3>A</h3>
-                    </button>
-                    <button>
-                        <h2>A</h2>
-                    </button>
-                    <button>
-                        <h1>A</h1>
-                    </button>
-                </div>
 
                 <div class="drop-toggle">
                     <h3>GREYSCALE</h3>
@@ -246,6 +175,7 @@
         </div>
 
     </div>
+
     <!-- Navigation bar drop down ends -->
 
     <div class="intro-text">
@@ -263,11 +193,11 @@
             <a href="../../assets/pages/architecture.html">ARCHITECTURE</a>
             <a href="../../assets/pages/significance.html">SIGNIFICANCE</a>
             <!--          <a href="#">EN/AR</a>-->
-            <a href="#">ACCESSIBILITY</a>
+            <a href="../pages/media.html">MEDIA</a>
         </div>
 
     </div>
-
+    
 
 
     <div class="container">
@@ -365,6 +295,31 @@
 
             <img src="../images/architectureImages/DesignProgress.png" alt="design over the years for dome of the rock">
         </div>
+
+        <footer class="footer">
+            <div class="footer-source">
+                <h3>RESOURCES</h3>
+                <h5><a href="../pages/media.html">MEDIA</a></h5>
+            </div>
+
+            <div class="vl"></div>
+            <div class="footer-social">
+                <h3>SOCIAL MEDIA</h3>
+                <h5> <a href="https://twitter.com/DomeOfTheRock01" target="_blank">TWITTER</a></h5>
+                <h5><a href="https://www.instagram.com/domeoftherock01/" target="_blank">INSTAGRAM</a></h5>
+                <h5><a href="https://www.youtube.com/channel/UCkh50TB4HkNJ_jSmOt1otrQ" target="_blank">YOUTUBE</a></h5>
+            </div>
+
+            <div class="vl"></div>
+            <div class="footer-content">
+                <div class="footer-content-piece">
+                    <h3>CONTENT</h3>
+                    <h5><a href="../pages/history.html">HISTORY</a></h5>
+                    <h5><a href="../pages/architecture.html">ARCHITECTURE</a></h5>
+                    <h5><a href="../pages/significance.html">SIGNIFICANCE</a></h5>
+                </div>
+            </div>
+        </footer>
 
 
     </div>

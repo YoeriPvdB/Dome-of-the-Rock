@@ -79,7 +79,12 @@ li{
   height: 90vh;
   z-index: 1;
 }
-
+.navbar-brand {
+  margin-left: 2%;
+}
+.social-media {
+  margin-right:2%;
+}
 .drop-content>h3>a
 {
     transition: 0.8s;

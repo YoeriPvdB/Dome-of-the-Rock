@@ -1,5 +1,5 @@
-var drops = [document.getElementById("history-drop"), document.getElementById("arch-drop"), document.getElementById("signi-drop"), document.getElementById("lang-drop"), document.getElementById("access-drop")];
-var tabLinks = [document.getElementById("history-link"), document.getElementById("arch-link"), document.getElementById("signi-link"), document.getElementById("media-link")];
+var drops = [document.getElementById("history-drop"), document.getElementById("arch-drop"), document.getElementById("signi-drop"), document.getElementById("access-drop")];
+var tabLinks = [document.getElementById("history-link"), document.getElementById("arch-link"), document.getElementById("signi-link"), document.getElementById("access-link")];
 
 var filterStatus = 0;
 var openedTab; 
@@ -63,18 +63,29 @@ function myFunction() {
 function FilterChange() {
     if (filterStatus == 0) {
         var elements = document.getElementsByTagName('div');
+        var imgs = document.getElementsByTagName('img');
 
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.filter = "grayscale(100%)";
+            
+        }
+
+        for(let i = 0; i < imgs.length; i++) {
+            imgs[i].style.filter = "grayscale(100%)";
         }
 
         filterStatus = 1;
 
     } else {
         var elements = document.getElementsByTagName('div');
-
+        var imgs = document.getElementsByTagName('img');
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.filter = "grayscale(0)";
+            
+        }
+
+        for(let i = 0; i < imgs.length; i++) {
+            imgs[i].style.filter = "grayscale(0)";
         }
 
         filterStatus = 0;

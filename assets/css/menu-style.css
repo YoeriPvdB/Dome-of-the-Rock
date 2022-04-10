@@ -134,6 +134,12 @@ p {
     /* background-color: aqua; */
 }
 
+.navbar-brand {
+    margin-left: 2%;
+  }
+  .social-media {
+    margin-right:2%;
+  }
 
 @media (max-width: 800px) {
 
@@ -295,6 +301,13 @@ p {
         display: inline-block;
         margin-left: 5%;
         width: 80%;
+    }
+
+    .mobile-timeline-content > a {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 
     .mobile-timeline-text {
