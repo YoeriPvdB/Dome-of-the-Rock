@@ -32,6 +32,12 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #FAD516;
 }
+
+
+.navbar-light .navbar-nav .nav-link :active {
+    color: #FAD516;
+}
+
 li{
     color: white;
 }
@@ -49,7 +55,12 @@ li{
 /*.navbar {*/
 /*    background: rgba(0,0, 0, 0.5);*/
 /*}*/
-
+.social-media>a{
+    transition: transform 0.5s;
+}
+.social-media>a:hover{
+    transform: rotate(180deg);
+}
 .drop-container {
   display: none;
   position: absolute;
@@ -204,6 +215,7 @@ li{
 .intro-text2 > h2 {
     color: #0f0f0f;
     font-weight: bold;
+    text-shadow:1px 1px 1px #FAD516;
 }
 .intro-text2 > h2::before {
     content: "";
@@ -413,6 +425,9 @@ li{
     .navbar {
         display: none;
     }
+
+
+
 
     .burger-menu {
         display: block;
