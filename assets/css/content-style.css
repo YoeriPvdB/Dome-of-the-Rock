@@ -465,6 +465,11 @@ a:hover{
   .nav-transparent { background-color:transparent;}
 
 @media (max-width: 1000px) {
+
+    .footer {
+        display: none;
+    }
+
     body {
         
         background-size: 500%;
@@ -522,8 +527,8 @@ a:hover{
         margin-top: 10px;
         left: 75vw;
         top: 0;
-        max-width: 50px;
-        max-height: 60px;
+        width: 50px;
+        height: 60px;
 
       }
       
