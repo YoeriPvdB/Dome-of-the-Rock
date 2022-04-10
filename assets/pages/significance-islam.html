@@ -2,9 +2,320 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Significance in Islam: Dome of the Rock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/content-style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <script>
+        let vh = window.innerHeight;
+    </script>
 </head>
 <body>
+<img src="../../assets/images/significanceImages/significanceIslamMain.png" alt="" style="position: absolute; left: -1%; width: 100vw; height: 100vh;">
+<!-- navigation bar starts -->
 
+<nav class="navbar navbar-expand-lg navbar-light opacity sticky" id="navId">
+    <a class="navbar-brand" href="../../index.html" onclick=""> <img src="../../assets/images/blackbg%20-%20round(2).png" width="80" height="80"  alt="logo"> </a>
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="DropChange(1)" aria-label="history navbar tab">HISTORY</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="DropChange(2)" aria-label="architecture navbar tab">ARCHITECTURE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="DropChange(3)" aria-label="significance navbar tab">SIGNIFICANCE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#" onclick="DropChange(4)" aria-label="media navbar tab">MEDIA</a>
+        </li>
+
+
+
+    </ul>
+    <div class=" nav navbar social-media ms-auto">
+        <a class="nav-link" href="#" onclick="DropChange(5)" aria-label="accessibility settings">
+            <img src="../../assets/images/icons/setting.png" height="38" width="38" alt="accessibility settings icon for dome of the rock" >
+        </a>
+        <a href="https://www.instagram.com/domeoftherock01/" class="nav-item nav-link" target="_blank">
+            <img src="../../assets/images/icons/instagram.png" height="38" width="38" alt="instagram for dome of the rock" >
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCkh50TB4HkNJ_jSmOt1otrQ" class="nav-item nav-link" target="_blank">
+            <img src="../../assets/images/icons/youtube.png" height="38" width="38" alt="youtube for dome of the rock">
+        </a>
+
+        <a href="https://twitter.com/DomeOfTheRock01" class="nav-item nav-link" target="_blank">
+            <img src="../../assets/images/icons/twitter.png" height="38" width="38" alt="twitter for dome of the rock">
+        </a>
+
+
+    </div>
+
+
+</nav>
+
+
+<!-- navigation bar ends -->
+
+<!-- navigation bar drop down starts -->
+
+<div class="drop-container" id="history-drop" aria-label="history navbar drop">
+
+    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+        <div class="drop-title">
+            <h1>HISTORY</h1>
+            <div class="hl"></div>
+        </div>
+
+        <div class="drop-content">
+            <h3><a href="../../assets/pages/history.html">TIMELINE </a></h3>
+            <h3><a href="../../assets/pages/content-test.html">BEFORE DOME OF THE ROCK </a></h3>
+            <h3><a href="#">AFTER DOME OF THE ROCK</a> </h3>
+            <div class="hl"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="drop-container" id="arch-drop">
+
+    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+        <div class="drop-title">
+            <h1>ARCHITECTURE</h1>
+            <div class="hl"></div>
+        </div>
+
+        <div class="drop-content">
+            <h3> <a href="../../assets/pages/architecture-construction.html">CONSTRUCTION </a></h3>
+            <h3><a href="../../assets/pages/architecture-shapeAppearance.html">SHAPE AND APPEARANCE </a></h3>
+            <h3><a href="../../assets/pages/architecture-mosaics.html">MOSAICS</a></h3>
+            <div class="hl"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="drop-container" id="signi-drop">
+
+    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+        <div class="drop-title">
+            <h1> SIGNIFICANCE</h1>
+            <div class="hl"></div>
+        </div>
+
+        <div class="drop-content">
+            <h3><a href="../../assets/pages/significance-islam.html">ISLAM </a> </h3>
+            <h3><a href="../../assets/pages/significance-judaism.html"> JUDAISM</a> </h3>
+            <h3><a href="../../assets/pages/significance-christianity.html">CHRISTIANITY</a> </h3>
+            <div class="hl"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="drop-container" id="lang-drop">
+
+    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+        <div class="drop-title">
+            <h1>MEDIA</h1>
+            <div class="hl"></div>
+        </div>
+
+        <div class="drop-content">
+            <h3>ENGLISH</h3>
+            <h3>LANGUAGE 2</h3>
+            <div class="hl"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="drop-container" id="access-drop">
+
+    <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img src="../../assets/images/cancel.png" alt=""></div>
+
+    <div class="drop-segment">
+        <div class="drop-title">
+            <h1>ACCESSIBILITY</h1>
+            <div class="hl"></div>
+        </div>
+
+        <div class="drop-content">
+
+            <div class="drop-toggle" id="toggle-text">
+                <h3>TEXT-SIZE</h3>
+                <div class="drop-toggle-buttons"></div>
+                <button>
+                    <h3>A</h3>
+                </button>
+                <button>
+                    <h2>A</h2>
+                </button>
+                <button>
+                    <h1>A</h1>
+                </button>
+            </div>
+
+            <div class="drop-toggle">
+                <h3>GREYSCALE</h3>
+                <button onclick="FilterChange()">ON/OFF</button>
+            </div>
+
+            <div class="hl"></div>
+        </div>
+    </div>
+
+</div>
+<!-- Navigation bar drop down ends -->
+
+<div class="intro-text">
+    <h1>Significance in Islam</h1>
+</div>
+
+<div class="burger-menu">
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="../images/logo_black.png" alt="">
+    </a>
+    <div id="myLinks">
+        <a href="../../index.html">HOME</a>
+        <a href="../../assets/pages/history.html">HISTORY</a>
+        <a href="../../assets/pages/architecture.html">ARCHITECTURE</a>
+        <a href="../../assets/pages/significance.html">SIGNIFICANCE</a>
+        <!--          <a href="#">EN/AR</a>-->
+        <a href="#">ACCESSIBILITY</a>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+
+
+    <div class="content-half-half">
+
+
+
+        <div class="content-paragraph halfwidth">
+
+            <h1>Purpose of Construction</h1>
+            <p>Abd al-Malik ibn Marwan ibn al-Hakam initiated the construction for the Dome.
+                There are varied accounts as to why Abd al-Malik ordered the construction of the Dome of the Rock.
+                A prevailing narrative is that Abd al-Malik wished to create a great shrine of Islam and divert Muslims’ attention and pilgrimage to Jerusalem, rather than Mecca. This is because the Umayyad caliphate, which held control of Jerusalem during this time (660-750 CE), was in conflict with the Christian Byzantine Empire and rival Muslim caliph Abd Allah ibn al-Zubayr. Diverting pilgrims and faithful to from Mecca was supposedly a large motivation as Abd Allah ibn al-Zubayr controlled Mecca. Contemporary historians believe many of these accounts are false or skewed, as later record keepers sought to discredit and harm the legacy of the Umayyad caliphate. In the time that followed the Dome’s construction, the Umayyads went on to overtake the Byzantines in the area, and captured coastal cities. As a result the region was largely Islamified and allowed the Dome to shine as a symbol of Islam in the holiest city on Earth.
+            </p>
+
+
+        </div>
+
+        <div class="content-image" id="right-image">
+            <img src="../images/significanceImages/Dome%20during%20Ottoman%20period%20(1).jpg" alt="dome during ottoman period">
+        </div>
+
+    </div>
+
+
+    <div class="content-fullparagraph">
+        <h3>Position</h3>
+        <p>
+            The exact motivation for the construction of the shrine is debated, as is the exact motivation for its position on Haram al-Sharif.
+            In Islam, the Haram al-Sharif is the location where Muhammad ascended to heaven during his Night Journey, also referred to as the Isra and Mi’raj. The Isra consisted of Muhammad travelling from Mecca to the ‘farthest mosque’, during a time of intense strife and difficulty ten years after declaring his prophethood. The angel Gabriel appeared to the Prophet with the winged creature Buraq, and they travelled from Mecca. First they prayed in Madinah (where he would later emigrate with his people). Then they travelled to Mount Sinai (where Allah revealed the Torah to Musa or Moses), then to Bethlehem (where Isa or Jesus was born), and lastly to the grave of Musa. After this experience, they went on to Masjid Al-Aqsa (on Temple Mount or Haram al-Sharif) in Jerusalem where Baruq was tied to the Western Wall while Gabriel and the Prophet ascended the mount. In the ‘Al-Aqsa Mosque’ (for which the current mosque on Temple Mount is named), he led all the other prophets in prayer. Gabriel then led him to the al-Shakrah, or Foundation Stone, where he ascended to heaven for the next part of his journey, the Mi’raj.
+
+
+            </p>
+
+        <p>It is considered the third most holy site in Islam, after Mecca and Medina, for being the site of both Muhammad leading the other prophets in prayer and ascending to heaven to speak with seven prophets. It was also the location for Muslim worshippers to face during prayer, until being changed to Mecca.
+            While the site has been identified as the location for the above events since the 8th century, before this it was mainly an oral tradition. So although it was seen as an important site at the time anyway, it is not possible to be certain for this exact reasoning behind constructing the Dome above the Rock.
+        </p>
+
+        <p>
+        </p>
+    </div>
+
+    <div class="content-half-half">
+
+        <div class="content-image" id="left-image">
+            <img src="../images/significanceImages/Foundation%20Stone%20closer.jpg" alt="3D view of Dome of the rock">
+        </div>
+
+        <div class="content-paragraph halfwidth">
+
+
+
+            <!-- <h1>BYZANTINE ERA HISTORY</h1> -->
+            <h3>Noble Rock</h3>
+            <p>
+                The Foundation Stone, or Noble Rock (al-Saḵrah al-Mušarrafah), is located directly under the Dome. In Islam, this is the location from where Muhammad ascended to heaven during the Night Journey, or the Isra and Mi’raj. There are recorded claims that an indentation on the south-western portion of the Rock is actually a footprint from this event.
+                [Foundation Stone closer picture]</p>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="full-image">
+
+        <img src="../images/significanceImages/Isra%20and%20Miraj.jpg" alt="design over the years for dome of the rock">
+    </div>
+
+
+</div>
+
+
+
+<script src="../../assets/scripts/dome-script.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    // code for changing the color of navbar on scroll
+    var myNav = document.getElementById('navId');
+
+    window.onscroll=function (){
+        "use strict";
+        if(window.scrollY>window.innerHeight)
+        {
+            myNav.classList.add("nav-colored");
+            myNav.classList.remove("nav-transparent");
+        }
+        else
+        {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-colored");
+        }
+    }
+</script>
 </body>
 </html>
