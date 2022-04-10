@@ -513,11 +513,48 @@ h1 {
         display: none;
     }
 
-    
+    .mobile-container {
+        width: 100vw;
+        height: 100vh;
+        display: inline-block;
+        
+    }
+
+    .mobile-header {
+        position: relative;
+        /* display: inline-block; */
+        min-width: 100%;
+        height: 45%;
+        
+    }
 
     .header-content {
+        position: absolute;
+        margin-top: 30%;
+        padding: 5%;
+        z-index: 1;
+    }
+
+    .header-content > h1 {
+        margin-bottom: 10%;
+        color: white;
+    }
+
+    .header-content  > h2 {
+        color: white;
+    }
+
+    .header-image {
         position: relative;
-        margin-top: 10%;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-image > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .burger-menu {
@@ -527,7 +564,7 @@ h1 {
         /* background-color: aliceblue; */
         background: rgba(255, 215, 0, 0.99);
         width: 100%;
-
+        z-index: 2;
     }
 
     .burger-menu #myLinks {
@@ -536,6 +573,7 @@ h1 {
         color: white;
         display: none;
         /* margin-top: 10px; */
+        z-index: 2;
 
     }
 
@@ -551,6 +589,100 @@ h1 {
         display: block;
     }
 
+    .mobile-timeline  {
+        display: flex;
+        position: relative;
+        /* margin-top: 50%; */
+        width: 100%;
+        height: 60%;
+    }
+    
+    .sidebar {
+        margin-left: 10%;
+        position: relative;
+        bottom: 0; 
+        margin-top: 15%;
+
+    }
+
+    .vl {
+        border-left: 6px solid black;
+        height: 4000px;
+    }
+
+    .content-side {
+        position: relative;
+        margin-top: 15%;
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        /* border-style: solid; */
+        /* border-color: green; */
+    }
+
+    .mobile-timeline-piece {
+        position: relative;
+        display: flex;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        
+        width: 100%;
+        height: 30%;
+    }
+    .mobile-timeline-piece > .hl {
+        border-top: 6px solid black;
+        margin-top: 3%;
+    width: 4%;
+    position: relative;
+    /* margin-top: 3%; */
+    justify-content: center;
+    align-items: center;
+    }
+
+    .mobile-timeline-content {
+        position: relative;
+        
+        display: inline-block;
+        margin-left: 5%;
+        width: 80%;
+    }
+
+    .mobile-timeline-text {
+        position: relative;
+        display: inline-flex;
+        /* padding: 5%; */
+        width: 100%;
+        height: 35%;
+    }
+
+    .mobile-timeline-text > h1 {
+        /* margin-right: 20%; */
+        font-size: medium;
+        text-decoration: underline;
+        width: 30%;
+    }
+
+    .mobile-timeline-text > p {
+        /* margin-left: 5%; */
+        font-size: small;
+    }
+
+    .mobile-timeline-image {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 70%;
+        
+    }
+
+    .mobile-timeline-image > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15%;
+        object-fit: cover;
+    }
+
+    
 
 
     .burger-menu a.icon img {
