@@ -74,7 +74,7 @@ function FilterChange() {
             imgs[i].style.filter = "grayscale(100%)";
         }
         document.getElementById("grey-btn").style.backgroundColor="#b1b1b1"
-        // document.body.style.backgroundImage = "url('assets/images/homepageGreyscale.png')";
+        document.body.style.backgroundImage = "url('assets/images/homepageGreyscale.png')";
 
         filterStatus = 1;
 
@@ -90,7 +90,7 @@ function FilterChange() {
             imgs[i].style.filter = "grayscale(0)";
         }
         document.getElementById("grey-btn").style.backgroundColor="#FAD516"
-        // document.body.style.backgroundImage = "url('assets/images/homepage07.jpg')";
+        document.body.style.backgroundImage = "url('assets/images/homepage07.jpg')";
         filterStatus = 0;
     }
 
