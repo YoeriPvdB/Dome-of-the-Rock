@@ -64,6 +64,13 @@ p {
   {
       color: #FAD516;
   }
+  #grey-btn{
+    background-color: #FAD516;
+    transition: 0.5s;
+}
+#grey-btn:hover{
+    background-color: #dcaf39;
+}
   
   .drop-segment
   {

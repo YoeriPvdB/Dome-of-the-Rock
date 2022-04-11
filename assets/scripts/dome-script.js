@@ -7,21 +7,26 @@ var navColour;
 
 function DropChange(status, id) {
 
+   
     openedTab = id;
     var check = document.title;
     for(let i = 0; i < tabLinks.length; i++) {
        
-        if(check ==="History" || check ==="Architecture" || check ==="Significance") {
+        if(check ==="History" || check ==="Architecture" || check ==="Significance" || check ==="Media") {
             tabLinks[i].style.color = "black";
         } else {
             tabLinks[i].style.color = "white";
         }
     }
+    
+    
     for (let i = 0; i < drops.length; i++) {
         drops[i].style.display = "none";
     }
+    
     document.getElementById(openedTab).style.color = "#FAD516";
     drops[status - 1].style.display = "block";
+
     drops[status-1].classList.add("menu-transition");
 
     
@@ -31,7 +36,7 @@ function DropChange(status, id) {
 function CloseDrop() {
     var check = document.title;
     
-    if(check ==="History" || check ==="Architecture" || check ==="Significance") {
+    if(check ==="History" || check ==="Architecture" || check ==="Significance" || check ==="Media") {
         document.getElementById(openedTab).style.color = "black";
     } else {
         document.getElementById(openedTab).style.color = "white";
@@ -73,6 +78,7 @@ function FilterChange() {
         for(let i = 0; i < imgs.length; i++) {
             imgs[i].style.filter = "grayscale(100%)";
         }
+        document.body
         document.getElementById("grey-btn").style.backgroundColor="#b1b1b1"
         filterStatus = 1;
 
@@ -83,7 +89,7 @@ function FilterChange() {
             elements[i].style.filter = "grayscale(0)";
             
         }
-
+        
         for(let i = 0; i < imgs.length; i++) {
             imgs[i].style.filter = "grayscale(0)";
         }
