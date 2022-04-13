@@ -199,7 +199,7 @@ p {
   
   }
   /*  end of drop menu animation class */
-  #close {
+  .drop-close {
     position: absolute;
       width: 20px;
       weight: 20px;
@@ -208,7 +208,7 @@ p {
       cursor: pointer;
   }
   
-  #close > img {
+  .drop-close > img {
     width: 100%;
     height: 100%;
   }
@@ -279,6 +279,24 @@ p {
   .drop-toggle-buttons {
     margin-left: 10%;
   }
+
+
+  .timeline-indicators {
+    position: absolute;
+    bottom: 3%;
+    margin-left: 45%;
+}
+
+.timeline-indicators > button {
+    
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2px;
+}
       /* end of drop down */
 
 @media (max-width: 800px) {

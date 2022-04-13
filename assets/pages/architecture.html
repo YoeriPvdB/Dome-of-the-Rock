@@ -24,7 +24,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="GetButton(0)">
 
   <nav class="navbar navbar-expand-lg navbar-light opacity sticky">
     <a class="navbar-brand" href="../../index.html" onclick="" style="margin-left: 2%"> <img src="../images/blackbg%20-%20round(2).png" width="80" height="80"  alt="logo"> </a>
@@ -72,7 +72,7 @@
   
   <div class="drop-container" id="history-drop" aria-label="history navbar drop">
 
-    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
+    <div class="drop-close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
         alt=""></div>
 
     <div class="drop-segment">
@@ -93,7 +93,7 @@
 
   <div class="drop-container" id="arch-drop">
 
-    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
+    <div class="drop-close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
         alt=""></div>
 
     <div class="drop-segment">
@@ -114,7 +114,7 @@
 
   <div class="drop-container" id="signi-drop">
 
-    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
+    <div class="drop-close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
         alt=""></div>
 
     <div class="drop-segment">
@@ -135,7 +135,7 @@
 
   <div class="drop-container" id="lang-drop">
 
-    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
+    <div class="drop-close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
         alt=""></div>
 
     <div class="drop-segment">
@@ -155,7 +155,7 @@
 
   <div class="drop-container" id="access-drop">
 
-    <div id="close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
+    <div class="drop-close" onclick="CloseDrop()" aria-label="close navbar drop section"> <img src="../images/cancel.png"
         alt=""></div>
 
     <div class="drop-segment">
@@ -186,7 +186,7 @@
                 From its construction to the multiple renovations it has gone through, the golden dome remains a crowning attraction in the old city of Jerusalem.</p>
           </div>
 
-        <div class="scroll-container">
+        <div class="scroll-container" id="scroll-id">
             <div class="scroll-content">
               <a href="../pages/architecture-construction.html"></a>
                 <div class="scroll-content-info">
@@ -200,7 +200,7 @@
               <a href="../pages/architecture-shapeAppearance.html"></a>
                 <div class="scroll-content-info">
 
-                    <h2>Shape & Appearance</h2>
+                    <h2 style="margin-left: 5%;">Shape & Appearance</h2>
                 </div>
                 <img src="../images/architectureImages/rainbow%20coloured%20interiors%20(1).jpg" alt="">
 
@@ -208,20 +208,17 @@
             <div class="scroll-content">
               <a href="../pages/architecture-mosaics.html"></a>
                 <div class="scroll-content-info">
-                  <h2>Shape</h2>
+                  <h2>Mosaics</h2>
                 </div>
                 <img src="../images/architectureImages/3dviewDomeoftheRock.jpg" alt="">
             </div>
-
-            <div class="carousel-indicators">
-              <h5>Scroll for more</h5>
-            </div>
-
-
-
-
-
             
+        </div>
+
+        <div class="timeline-indicators" id="timeline-buttons">
+          <button id="btn-1" onclick="GetSection(0)"></button>
+          <button id="btn-2" onclick="GetSection(1)"></button>
+          <button id="btn-3" onclick="GetSection(2)"></button>
         </div>
     </div>
 
@@ -309,10 +306,61 @@
   
     </div>
 
-    <script src="../scripts/dome-script.js">
+    <script src="../scripts/dome-script.js"></script>
 
-      </script>
 
+    <script>
+
+      
+      const getBody = document.querySelector(".container");
+      // GetButton(0);
+      const scrollContainer = document.querySelector(".scroll-container");
+      // const timelineWidth = document.getElementById("hist-timeline").clientWidth;
+      const scrollContId = document.getElementById("scroll-id");
+      var scrollAmount = 0;
+  
+      const scrollButtons = [document.getElementById("btn-1"),document.getElementById("btn-2"), document.getElementById("btn-3")]
+  
+      var widths = [0, 200, 500];
+      
+      getBody.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollAmount+=evt.deltaY;
+        
+        if(scrollAmount < widths[1]) {
+          GetButton(0);
+        }
+  
+  
+        if(scrollAmount > widths[1]) {
+          GetButton(1);
+        }
+  
+        if(scrollAmount > widths[2]) {
+          GetButton(2);
+        }
+      });
+  
+      function GetButton(button) {
+          for(let i = 0; i < scrollButtons.length; i++) {
+            scrollButtons[i].style.backgroundColor = "gray";
+          }
+  
+          scrollButtons[button].style.backgroundColor = "black";
+          scrollContId.style.scrollBehavior = "auto";
+      }
+  
+      function GetSection(button) {
+        scrollContId.style.scrollBehavior = "smooth";
+          scrollContainer.scrollLeft = widths[button];
+          scrollAmount = widths[button];
+          
+          GetButton(button);
+      }
+      
+      
+    </script>
 </body>
 
 </html>
