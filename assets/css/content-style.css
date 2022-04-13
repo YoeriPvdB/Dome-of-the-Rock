@@ -378,6 +378,10 @@ iframe {
     height: 40vh;
 }
 
+.content-image .right {
+    margin-left: 5%;
+}
+
 .content-image > img{
     object-fit: cover;
         display: inline;
