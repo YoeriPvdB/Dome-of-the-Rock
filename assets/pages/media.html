@@ -110,7 +110,7 @@
 
     <div class="drop-container" id="history-drop" aria-label="history navbar drop">
 
-        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+        <div class="drop-close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
                 src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
@@ -131,7 +131,7 @@
 
     <div class="drop-container" id="arch-drop">
 
-        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+        <div class="drop-close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
                 src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
@@ -152,7 +152,7 @@
 
     <div class="drop-container" id="signi-drop">
 
-        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+        <div class="drop-close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
                 src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
@@ -175,7 +175,7 @@
 
     <div class="drop-container" id="access-drop">
 
-        <div id="close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
+        <div class="drop-close" onclick="DropChange(0)" aria-label="close navbar drop section"> <img
                 src="../../assets/images/cancel.png" alt=""></div>
 
         <div class="drop-segment">
@@ -196,6 +196,24 @@
         </div>
 
     </div>
+
+    <div class="burger-menu">
+    
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="../images/logo_black.png" alt="">
+        </a>
+        <div id="myLinks">
+          <a href="../../index.html">HOME</a>
+          <a href="../pages/history.html">HISTORY</a>
+          <a href="../pages/architecture.html">ARCHITECTURE</a>
+          <a href="../pages/significance.html">SIGNIFICANCE</a>
+          <a href="../pages/media.html">MEDIA</a>
+         
+        </div>
+  
+      </div>
+  
+
 
     <!-- Navigation bar drop down ends -->
     <div class="container" style="top: 25vh;">
@@ -257,6 +275,8 @@
 
         </div>
 
+        
+
         <footer class="footer">
             <div class="footer-source">
                 <h3>RESOURCES</h3>
@@ -283,6 +303,7 @@
         </footer>
     </div>
 
+    
     <script src="../scripts/dome-script.js"></script>
     <script>// code for changing the color of navbar on scroll
         var myNav = document.getElementById('navId');
